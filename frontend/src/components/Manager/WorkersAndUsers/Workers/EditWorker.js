@@ -19,7 +19,8 @@ const EditWorker = () => {
   
   
       const getUserDetail = async() =>{
-          let res = await fetch(`http://localhost:8000/joiya/worker/${params.id}`)
+          let res = await fetch(`https://backend.joyiapetroleum.com
+/joiya/worker/${params.id}`)
           res = await res.json();
 
           setname(res.name)
@@ -34,7 +35,8 @@ const EditWorker = () => {
 
       const updateData = async(e) =>{
         e.preventDefault();
-       let res = await fetch(`http://localhost:8000/joiya/worker/${params.id}`,{
+       let res = await fetch(`https://backend.joyiapetroleum.com
+/joiya/worker/${params.id}`,{
         method: "put",
         body: JSON.stringify({name, mobileNumber, idCard, pumpName, salary, advanceSalary
 

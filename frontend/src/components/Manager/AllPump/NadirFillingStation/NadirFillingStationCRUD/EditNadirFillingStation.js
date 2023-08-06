@@ -42,7 +42,8 @@ const EditNadirFillingStation = () => {
 
 
     const getUserDetail = async () => {
-        let res = await fetch(`http://localhost:8000/joiya/nadirFillingStations/data/${params.id}`)
+        let res = await fetch(`https://backend.joyiapetroleum.com
+/joiya/nadirFillingStations/data/${params.id}`)
         res = await res.json();
 
         setLastReadingSup1(res.lastReadingSup1)
@@ -74,7 +75,8 @@ const EditNadirFillingStation = () => {
 
     const updateData = async (e) => {
         e.preventDefault();
-        let res = await fetch(`http://localhost:8000/joiya/nadirFillingStations/data/${params.id}`, {
+        let res = await fetch(`https://backend.joyiapetroleum.com
+/joiya/nadirFillingStations/data/${params.id}`, {
             method: "put",
             body: JSON.stringify({
                 lastReadingSup1: Number(lastReadingSup1),

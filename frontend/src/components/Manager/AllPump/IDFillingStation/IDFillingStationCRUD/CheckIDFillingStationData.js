@@ -6,7 +6,8 @@ const CheckIDFillingStationData = () => {
     const [uData, setUData] = useState([]);
     
     const userData = async() =>{
-        let res = await fetch("http://localhost:8000/joiya/idFillingStation/data/reverse")
+        let res = await fetch("https://backend.joyiapetroleum.com
+/joiya/idFillingStation/data/reverse")
         res = await res.json();    
         setUData(res)
     }

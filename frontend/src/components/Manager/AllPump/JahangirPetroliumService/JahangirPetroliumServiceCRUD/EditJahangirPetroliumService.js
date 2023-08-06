@@ -42,7 +42,8 @@ const EditJahangirPetroliumService = () => {
 
 
     const getUserDetail = async () => {
-        let res = await fetch(`http://localhost:8000/joiya/jahangirPetrolium/data/${params.id}`)
+        let res = await fetch(`https://backend.joyiapetroleum.com
+/joiya/jahangirPetrolium/data/${params.id}`)
         res = await res.json();
 
         setLastReadingSup1(res.lastReadingSup1)
@@ -76,7 +77,8 @@ const EditJahangirPetroliumService = () => {
 
     const updateData = async (e) => {
         e.preventDefault();
-        let res = await fetch(`http://localhost:8000/joiya/jahangirPetrolium/data/${params.id}`, {
+        let res = await fetch(`https://backend.joyiapetroleum.com
+/joiya/jahangirPetrolium/data/${params.id}`, {
             method: "put",
             body: JSON.stringify({
                 lastReadingSup1: Number(lastReadingSup1),

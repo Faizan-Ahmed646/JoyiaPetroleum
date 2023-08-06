@@ -38,7 +38,8 @@ const EditBhattiPetrolium = () => {
 
 
     const getUserDetail = async () => {
-        let res = await fetch(`http://localhost:8000/joiya/bhattiPetrolium/data/${params.id}`)
+        let res = await fetch(`https://backend.joyiapetroleum.com
+/joiya/bhattiPetrolium/data/${params.id}`)
         res = await res.json();
 
         setLastReadingSup1(res.lastReadingSup1)
@@ -68,7 +69,8 @@ const EditBhattiPetrolium = () => {
 
     const updateData = async (e) => {
         e.preventDefault();
-        let res = await fetch(`http://localhost:8000/joiya/bhattiPetrolium/data/${params.id}`, {
+        let res = await fetch(`https://backend.joyiapetroleum.com
+/joiya/bhattiPetrolium/data/${params.id}`, {
             method: "put",
             body: JSON.stringify({
                 lastReadingSup1: Number(lastReadingSup1),

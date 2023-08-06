@@ -6,7 +6,8 @@ const CheckAddJahangirPetroliumService = () => {
     const [uData, setUData] = useState([]);
     
     const userData = async() =>{
-        let res = await fetch("http://localhost:8000/joiya/jahangirPetrolium/data/reverse")
+        let res = await fetch("https://backend.joyiapetroleum.com
+/joiya/jahangirPetrolium/data/reverse")
         res = await res.json();    
         setUData(res)
     }

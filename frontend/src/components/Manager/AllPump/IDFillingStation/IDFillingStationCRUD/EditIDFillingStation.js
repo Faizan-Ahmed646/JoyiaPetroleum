@@ -44,7 +44,8 @@ const EditIDFillingStation = () => {
 
 
     const getUserDetail = async () => {
-        let res = await fetch(`http://localhost:8000/joiya/idFillingStation/data/${params.id}`)
+        let res = await fetch(`https://backend.joyiapetroleum.com
+/joiya/idFillingStation/data/${params.id}`)
         res = await res.json();
 
         setLastReadingSup1(res.lastReadingSup1)
@@ -78,7 +79,8 @@ const EditIDFillingStation = () => {
 
     const updateData = async (e) => {
         e.preventDefault();
-        let res = await fetch(`http://localhost:8000/joiya/idFillingStation/data/${params.id}`, {
+        let res = await fetch(`https://backend.joyiapetroleum.com
+/joiya/idFillingStation/data/${params.id}`, {
             method: "put",
             body: JSON.stringify({
                 lastReadingSup1: Number(lastReadingSup1),

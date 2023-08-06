@@ -42,7 +42,8 @@ const EditBabaFareedFillingStaion = () => {
 
 
     const getUserDetail = async () => {
-        let res = await fetch(`http://localhost:8000/joiya/babafareed/data/${params.id}`)
+        let res = await fetch(`https://backend.joyiapetroleum.com
+/joiya/babafareed/data/${params.id}`)
         res = await res.json();
 
         setLastReadingSup1(res.lastReadingSup1)
@@ -76,7 +77,8 @@ const EditBabaFareedFillingStaion = () => {
 
     const updateData = async (e) => {
         e.preventDefault();
-        let res = await fetch(`http://localhost:8000/joiya/babafareed/data/${params.id}`, {
+        let res = await fetch(`https://backend.joyiapetroleum.com
+/joiya/babafareed/data/${params.id}`, {
             method: "put",
             body: JSON.stringify({
                 lastReadingSup1: Number(lastReadingSup1),

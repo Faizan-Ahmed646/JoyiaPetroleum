@@ -20,7 +20,8 @@ function Signup() {
       return false
     }
     e.preventDefault();
-    let abcd = await fetch("http://localhost:8000/joiya/user", {
+    let abcd = await fetch("https://backend.joyiapetroleum.com
+/joiya/user", {
       method: 'POST',
       body: JSON.stringify({ name, email, phone, password }),
       headers: {

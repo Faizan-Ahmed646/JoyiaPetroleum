@@ -11,7 +11,8 @@ const GetSingleNadirFillingStationData = () => {
     const [aliPetroliumPump, setAliPetroliumPump] = useState([]);
     const { id } = useParams();
 const pumpData = async() =>{
-    let res = await fetch(`http://localhost:8000/joiya/nadirFillingStations/data/${id}`)
+    let res = await fetch(`https://backend.joyiapetroleum.com
+/joiya/nadirFillingStations/data/${id}`)
     res = await res.json();    
     setAliPetroliumPump(res)
 }

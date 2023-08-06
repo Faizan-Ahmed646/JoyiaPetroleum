@@ -65,7 +65,8 @@ const FirstAddGo09 = () => {
             return false
         }
         e.preventDefault();
-        let pumpData = await fetch("http://localhost:8000/joiya/go09/data/", {
+        let pumpData = await fetch("https://backend.joyiapetroleum.com
+/joiya/go09/data/", {
             method: 'POST',
             body: JSON.stringify({
                 lastReadingSup1: Number(lastReadingSup1),

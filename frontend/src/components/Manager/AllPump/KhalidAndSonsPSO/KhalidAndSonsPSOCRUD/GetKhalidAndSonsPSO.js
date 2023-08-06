@@ -6,7 +6,8 @@ const GetKhalidAndSonsPSO = () => {
 const [uData, setUData] = useState([]);
     
 const userData = async() =>{
-    let res = await fetch("http://localhost:8000/joiya/khalidAndSon/data/reverse")
+    let res = await fetch("https://backend.joyiapetroleum.com
+/joiya/khalidAndSon/data/reverse")
     res = await res.json();    
     setUData(res)
 }
@@ -19,7 +20,8 @@ console.log(uData)
 
     const deleteUser = async(id) =>{
         
-        let res = await fetch("http://localhost:8000/joiya/khalidAndSon/data/"+id,{
+        let res = await fetch("https://backend.joyiapetroleum.com
+/joiya/khalidAndSon/data/"+id,{
             method: "delete"
         })
         res = await res.json()
