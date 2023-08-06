@@ -33,8 +33,7 @@ const AddWorkers = () => {
              return false
          }
          e.preventDefault();
-         let pumpData = await fetch("https://backend.joyiapetroleum.com
-/joiya/worker", {
+         let pumpData = await fetch("https://backend.joyiapetroleum.com/joiya/worker", {
              method: 'POST',
              body: JSON.stringify({
                  
