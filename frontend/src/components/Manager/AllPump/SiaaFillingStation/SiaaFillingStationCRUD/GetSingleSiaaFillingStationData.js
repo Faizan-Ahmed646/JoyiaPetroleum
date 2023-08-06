@@ -11,8 +11,7 @@ const GetSingleSiaaFillingStationData = () => {
     const [aliPetroliumPump, setAliPetroliumPump] = useState([]);
     const { id } = useParams();
 const pumpData = async() =>{
-    let res = await fetch(`https://backend.joyiapetroleum.com
-/joiya/siaaFillingStation/data/${id}`)
+    let res = await fetch(`https://backend.joyiapetroleum.com/joiya/siaaFillingStation/data/${id}`)
     res = await res.json();    
     setAliPetroliumPump(res)
 }
