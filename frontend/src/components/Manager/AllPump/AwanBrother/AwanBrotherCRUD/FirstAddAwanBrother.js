@@ -81,8 +81,7 @@ const FirstAddAwanBrother = () => {
             return false
         }
         e.preventDefault();
-        let pumpData = await fetch("https://backend.joyiapetroleum.com
-/joiya/awanbrothers/data/", {
+        let pumpData = await fetch("https://backend.joyiapetroleum.com/joiya/awanbrothers/data/", {
             method: 'POST',
             body: JSON.stringify({
                 lastReadingSup1: Number(lastReadingSup1),

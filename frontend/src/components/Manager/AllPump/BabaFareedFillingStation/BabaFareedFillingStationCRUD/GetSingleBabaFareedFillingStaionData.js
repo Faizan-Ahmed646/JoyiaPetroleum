@@ -11,8 +11,7 @@ const GetSingleBabaFareedFillingStaionData = () => {
     const [aliPetroliumPump, setAliPetroliumPump] = useState([]);
     const { id } = useParams();
 const pumpData = async() =>{
-    let res = await fetch(`https://backend.joyiapetroleum.com
-/joiya/babafareed/data/${id}`)
+    let res = await fetch(`https://backend.joyiapetroleum.com/joiya/babafareed/data/${id}`)
     res = await res.json();    
     setAliPetroliumPump(res)
 }

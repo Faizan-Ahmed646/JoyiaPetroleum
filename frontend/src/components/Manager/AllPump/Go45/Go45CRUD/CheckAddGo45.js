@@ -7,7 +7,7 @@ const CheckAddGo45 = () => {
     
     const userData = async() =>{
         let res = await fetch("https://backend.joyiapetroleum.com
-/joiya/go45/data/reverse")
+        /joiya/go45/data/reverse")
         res = await res.json();    
         setUData(res)
     }

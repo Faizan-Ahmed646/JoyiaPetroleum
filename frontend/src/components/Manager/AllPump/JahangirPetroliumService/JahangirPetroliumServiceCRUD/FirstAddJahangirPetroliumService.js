@@ -73,8 +73,7 @@ const FirstAddJahangirPetroliumService = () => {
             return false
         }
         e.preventDefault();
-        let pumpData = await fetch("https://backend.joyiapetroleum.com
-/joiya/jahangirPetrolium/data/", {
+        let pumpData = await fetch("https://backend.joyiapetroleum.com/joiya/jahangirPetrolium/data/", {
             method: 'POST',
             body: JSON.stringify({
                 lastReadingSup1: Number(lastReadingSup1),

@@ -65,8 +65,7 @@ const FirstAddNoorPetrolium = () => {
             return false
         }
         e.preventDefault();
-        let pumpData = await fetch("https://backend.joyiapetroleum.com
-/joiya/noorPetrolium/data/", {
+        let pumpData = await fetch("https://backend.joyiapetroleum.com/joiya/noorPetrolium/data/", {
             method: 'POST',
             body: JSON.stringify({
                 lastReadingSup1: Number(lastReadingSup1),

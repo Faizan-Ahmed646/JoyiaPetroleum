@@ -6,8 +6,7 @@ const CheckBhattiPetroliumData = () => {
     const [uData, setUData] = useState([]);
     
     const userData = async() =>{
-        let res = await fetch("https://backend.joyiapetroleum.com
-/joiya/bhattiPetrolium/data/reverse")
+        let res = await fetch("https://backend.joyiapetroleum.com/joiya/bhattiPetrolium/data/reverse")
         res = await res.json();    
         setUData(res)
     }

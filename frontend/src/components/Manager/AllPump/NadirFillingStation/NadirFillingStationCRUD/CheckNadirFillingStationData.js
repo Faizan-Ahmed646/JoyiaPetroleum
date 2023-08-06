@@ -6,8 +6,7 @@ const CheckNadirFillingStationData = () => {
     const [uData, setUData] = useState([]);
     
     const userData = async() =>{
-        let res = await fetch("https://backend.joyiapetroleum.com
-/joiya/nadirFillingStations/data/reverse")
+        let res = await fetch("https://backend.joyiapetroleum.com/joiya/nadirFillingStations/data/reverse")
         res = await res.json();    
         setUData(res)
     }

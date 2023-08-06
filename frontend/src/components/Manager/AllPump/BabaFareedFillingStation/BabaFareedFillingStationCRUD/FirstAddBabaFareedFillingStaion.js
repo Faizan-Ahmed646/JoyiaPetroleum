@@ -73,8 +73,7 @@ const FirstAddBabaFareedFillingStaion = () => {
             return false
         }
         e.preventDefault();
-        let pumpData = await fetch("https://backend.joyiapetroleum.com
-/joiya/babafareed/data/", {
+        let pumpData = await fetch("https://backend.joyiapetroleum.com/joiya/babafareed/data/", {
             method: 'POST',
             body: JSON.stringify({
                 lastReadingSup1: Number(lastReadingSup1),

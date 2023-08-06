@@ -38,8 +38,7 @@ const EditAlSiddiqueFillingStation = () => {
 
 
     const getUserDetail = async () => {
-        let res = await fetch(`https://backend.joyiapetroleum.com
-/joiya/alSiddique/data/${params.id}`)
+        let res = await fetch(`https://backend.joyiapetroleum.com/joiya/alSiddique/data/${params.id}`)
         res = await res.json();
 
         setLastReadingSup1(res.lastReadingSup1)

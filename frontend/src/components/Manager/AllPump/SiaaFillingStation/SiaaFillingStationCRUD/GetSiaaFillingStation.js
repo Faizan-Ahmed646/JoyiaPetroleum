@@ -6,8 +6,7 @@ const GetSiaaFillingStation = () => {
 const [uData, setUData] = useState([]);
     
 const userData = async() =>{
-    let res = await fetch("https://backend.joyiapetroleum.com
-/joiya/siaaFillingStation/data/reverse")
+    let res = await fetch("https://backend.joyiapetroleum.com/joiya/siaaFillingStation/data/reverse")
     res = await res.json();    
     setUData(res)
 }
@@ -20,8 +19,7 @@ console.log(uData)
 
     const deleteUser = async(id) =>{
         
-        let res = await fetch("https://backend.joyiapetroleum.com
-/joiya/siaaFillingStation/data/"+id,{
+        let res = await fetch("https://backend.joyiapetroleum.com/joiya/siaaFillingStation/data/"+id,{
             method: "delete"
         })
         res = await res.json()

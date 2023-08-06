@@ -38,8 +38,7 @@ const EditGo45 = () => {
 
 
     const getUserDetail = async () => {
-        let res = await fetch(`https://backend.joyiapetroleum.com
-/joiya/go45/data/${params.id}`)
+        let res = await fetch(`https://backend.joyiapetroleum.com/joiya/go45/data/${params.id}`)
         res = await res.json();
 
         setLastReadingSup1(res.lastReadingSup1)

@@ -69,8 +69,7 @@ const EditNoorPetrolium = () => {
 
     const updateData = async (e) => {
         e.preventDefault();
-        let res = await fetch(`https://backend.joyiapetroleum.com
-/joiya/noorPetrolium/data/${params.id}`, {
+        let res = await fetch(`https://backend.joyiapetroleum.com/joiya/noorPetrolium/data/${params.id}`, {
             method: "put",
             body: JSON.stringify({
                 lastReadingSup1: Number(lastReadingSup1),
