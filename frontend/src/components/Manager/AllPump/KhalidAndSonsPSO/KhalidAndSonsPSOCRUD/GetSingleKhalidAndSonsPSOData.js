@@ -11,8 +11,7 @@ const GetSingleKhalidAndSonsPSOData = () => {
     const [aliPetroliumPump, setAliPetroliumPump] = useState([]);
     const { id } = useParams();
 const pumpData = async() =>{
-    let res = await fetch(`https://backend.joyiapetroleum.com
-/joiya/khalidAndSon/data/${id}`)
+    let res = await fetch(`https://backend.joyiapetroleum.com/joiya/khalidAndSon/data/${id}`)
     res = await res.json();    
     setAliPetroliumPump(res)
 }
