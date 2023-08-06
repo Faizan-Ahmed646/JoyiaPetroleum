@@ -28,8 +28,7 @@ function Login() {
     if (handle.email == "" || handle.password == "") {
       toast.warning("Enter the Fields First 😒");
     } else {
-      let record = await fetch("https://backend.joyiapetroleum.com
-/joiya/user/login", {
+      let record = await fetch("https://backend.joyiapetroleum.com/joiya/user/login", {
         method: "POST",
         headers: {
           "content-Type": "application/json",

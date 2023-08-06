@@ -6,8 +6,7 @@ const Users = () => {
     const [uData, setUData] = useState([]);
 
     const userData = async () => {
-        let res = await fetch("https://backend.joyiapetroleum.com
-/joiya/user")
+        let res = await fetch("https://backend.joyiapetroleum.com/joiya/user")
         res = await res.json();
         setUData(res)
     }
@@ -19,8 +18,7 @@ const Users = () => {
 
     const deleteUser = async (id) => {
 
-        let res = await fetch("https://backend.joyiapetroleum.com
-/joiya/user/" + id, {
+        let res = await fetch("https://backend.joyiapetroleum.com/joiya/user/" + id, {
             method: "delete"
         })
         res = await res.json()
