@@ -7,8 +7,7 @@ const CheckAddAliPetrolium = () => {
     const [uData, setUData] = useState([]);
     
     const userData = async() =>{
-        let res = await fetch("https://backend.joyiapetroleum.com
-/joiya/pump/data/reverse")
+        let res = await fetch("https://backend.joyiapetroleum.com/joiya/pump/data/reverse")
         res = await res.json();    
         setUData(res)
     }
