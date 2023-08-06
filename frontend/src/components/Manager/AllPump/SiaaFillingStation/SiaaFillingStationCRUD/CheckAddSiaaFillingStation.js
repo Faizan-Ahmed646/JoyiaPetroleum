@@ -6,8 +6,7 @@ const CheckAddSiaaFillingStation = () => {
     const [uData, setUData] = useState([]);
     
     const userData = async() =>{
-        let res = await fetch("https://backend.joyiapetroleum.com
-/joiya/siaaFillingStation/data/reverse")
+        let res = await fetch("https://backend.joyiapetroleum.com/joiya/siaaFillingStation/data/reverse")
         res = await res.json();    
         setUData(res)
     }
